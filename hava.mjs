@@ -2,8 +2,8 @@ import  alt from 'alt';
 import axios from 'axios';
 
 
-let sehir = 'Istanbul'
-let api='YourApiKey'
+let sehir = 'Istanbul'  //City To Collect Weather Data
+let api='YourApiKey'     //Api Key Here
 let url=`https://api.openweathermap.org/data/2.5/weather?q=${sehir}&appid=${api}`
 const arti = await axios.get(url); 
 const son = await arti.data.weather[0].main;
@@ -31,7 +31,7 @@ let currentWeatherType = await getWeatherType();
         }
     }
     
-   setInterval(syncNewData, 300000); //miliseconnd
+   setInterval(syncNewData, 300000); //milisecond time to update data
 
     function syncNewData(){
         
