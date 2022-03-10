@@ -1,4 +1,4 @@
-altV resource for real wheater to server
+Simple altV resource for real wheater to server
 
 
 
