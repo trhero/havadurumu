@@ -47,7 +47,6 @@ let currentWeatherType = await getWeatherType();
             player.setWeather(currentWeatherType);
             alt.log(son);
             setDate(player);
-            alt.log(currentDate);
         });
 
     function setDate(player){
