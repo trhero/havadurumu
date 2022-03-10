@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 let sehir = 'Istanbul'
-let api='37cf643896ca2a5b969fd5cd5e737816'
+let api='YourApiKey'
 let url=`https://api.openweathermap.org/data/2.5/weather?q=${sehir}&appid=${api}`
 const arti = await axios.get(url); 
 const son = await arti.data.weather[0].main;
