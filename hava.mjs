@@ -6,7 +6,7 @@ let sehir = 'Istanbul'  //City To Collect Weather Data
 let api='YourApiKey'     //Api Key Here
 let url=`https://api.openweathermap.org/data/2.5/weather?q=${sehir}&appid=${api}`
 const arti = await axios.get(url); 
-const son = await arti.data.weather[0].main;
+const son = arti.data.weather[0].main;
 let currentWeatherType = await getWeatherType();
 
   
